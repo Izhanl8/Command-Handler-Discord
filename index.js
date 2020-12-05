@@ -5,12 +5,12 @@ const client = new Discord.Client();
 const fs = require('fs');
 const { readdirSync } = require('fs');
 const Enmap = require("enmap");
-const prefix = ".";
+const {token, prefix, color} = require('config.json');
 
 
 // Login console message
 client.on('ready', () => {
-  console.log(`Estoy Activado Como:\n${client.user.tag}\n--------------------`)
+  console.log(`I'm Activated As:\n${client.user.tag}\n--------------------`)
 })
 
 /* Command handler */
@@ -82,5 +82,5 @@ client.on("message", async message => {
 })
 
 
-//
-client.login("")
+// client run
+client.login(token)
