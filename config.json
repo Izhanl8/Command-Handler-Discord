@@ -1,5 +1,5 @@
 {
-    "token": "", // Your token bot
-    "prefix": "",  // Your prefx bot
-    "color": "" // Your color bot
+    "token": "", 
+    "prefix": "",  
+    "color": "" 
 }
